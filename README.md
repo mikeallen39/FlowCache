@@ -16,7 +16,7 @@ Achieving **2.38× speedup on MAGI-1** and **6.7× on SkyReels-V2** with negligi
 
 </div>
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Overview](#overview)
 - [Method](#method)
@@ -30,7 +30,7 @@ Achieving **2.38× speedup on MAGI-1** and **6.7× on SkyReels-V2** with negligi
 
 ---
 
-## Overview
+## 🌟 Overview
 
 FlowCache is a caching framework designed specifically for **autoregressive video generation models**. Unlike traditional caching methods that treat all frames uniformly, FlowCache introduces a **chunkwise caching strategy** where each video chunk maintains independent caching policies, complemented by **importance-based KV cache compression** that maintains fixed memory bounds while preserving generation quality.
 
@@ -40,7 +40,7 @@ FlowCache is a caching framework designed specifically for **autoregressive vide
 
 ---
 
-## Method
+## 🔬 Method
 
 ### Key Findings
 
@@ -71,7 +71,7 @@ For more details, please refer to the original paper.
 
 ---
 
-## Main Results
+## 📊 Main Results
 
 ### Quantitative Performance
 
@@ -106,7 +106,7 @@ For more details, please refer to the original paper.
 
 ---
 
-## Installation
+## 🛠️ Installation
 
 ### Prerequisites
 
@@ -130,7 +130,7 @@ pip install -r requirements.txt
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ### MAGI-1
 
@@ -164,7 +164,7 @@ bash run_flowcache_kvcompress.sh
 
 ---
 
-## Supported Models
+## 🎯 Supported Models
 
 | Model | Type | Tasks | Status |
 |:------|:-----|:------|:------:|
@@ -173,7 +173,7 @@ bash run_flowcache_kvcompress.sh
 
 ---
 
-## Citation
+## 📚 Citation
 
 If you find FlowCache useful for your research, please cite:
 
@@ -188,19 +188,13 @@ If you find FlowCache useful for your research, please cite:
 
 ---
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 We thank the authors of the following projects for their valuable contributions:
 
 - [MAGI-1](https://github.com/SandAI-org/MAGI-1) for the autoregressive video generation framework
 - [SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2) for the video diffusion model
-- [TeaCache](https://github.com/LTCai/TeaCache) for the inspiration on feature caching strategies
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- [TeaCache](https://github.com/ali-vilab/TeaCache) for the inspiration on feature caching strategies
 
 ---
 
