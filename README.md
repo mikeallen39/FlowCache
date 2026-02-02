@@ -1,10 +1,10 @@
 <div align="center">
 
-# FlowCache: Efficient Caching for Autoregressive Video Generation
+# Flow Caching for Autoregressive Video Generation
 
 ### ICLR 2026
 
-**[Paper](https://openreview.net/forum?id=xxxx)** | **[arXiv](https://arxiv.org/abs/2406.xxxxx)** | **[Code](#)** |
+**[Paper](https://openreview.net/forum?id=vko4DuhKbh)** | **[arXiv]()** |
 
 **The first caching framework specifically designed for autoregressive video generation**
 
