@@ -6,6 +6,10 @@
 
 **[Paper](https://openreview.net/forum?id=vko4DuhKbh)** | **[arXiv]()** |
 
+<div align="center">
+  <img src="assets/FlowCache1.png" width="90%">
+</div>
+
 **The first caching framework specifically designed for autoregressive video generation**
 
 Achieving **2.38× speedup on MAGI-1** and **6.7× on SkyReels-V2** with negligible quality degradation
