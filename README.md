@@ -1,14 +1,14 @@
 <div align="center">
 
+<div align="center">
+  <img src="assets/FlowCache1.png" width="50%">
+</div>
+
 # Flow Caching for Autoregressive Video Generation
 
 ### ICLR 2026
 
 **[Paper](https://openreview.net/forum?id=vko4DuhKbh)** | **[arXiv]()** |
-
-<div align="center">
-  <img src="assets/FlowCache1.png" width="90%">
-</div>
 
 **The first caching framework specifically designed for autoregressive video generation**
 
