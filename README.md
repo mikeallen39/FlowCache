@@ -156,10 +156,10 @@ bash run_flowcache_fast.sh
 
 ## 🎯 Supported Models
 
-| Model | Type | Tasks | Status |
-|:------|:-----|:------|:------:|
-| **[MAGI-1](https://github.com/SandAI-org/MAGI-1)** | 4.5B | T2V, I2V, V2V | ✅ |
-| **[SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)** | 1.3B | T2V, I2V | ✅ |
+| Model | Type | Status |
+|:------|:-----|:------:|
+| **[MAGI-1](https://github.com/SandAI-org/MAGI-1)** | distilled-4.5B | ✅ |
+| **[SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)** | 1.3B | ✅ |
 
 ---
 
