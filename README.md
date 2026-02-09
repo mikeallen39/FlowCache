@@ -158,7 +158,7 @@ bash run_flowcache_fast.sh
 
 | Model | Type | Status |
 |:------|:-----|:------:|
-| **[MAGI-1](https://github.com/SandAI-org/MAGI-1)** | distilled-4.5B | ✅ |
+| **[MAGI-1](https://github.com/SandAI-org/MAGI-1)** | 4.5B-distill | ✅ |
 | **[SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)** | 1.3B | ✅ |
 
 ---
@@ -182,9 +182,10 @@ If you find FlowCache useful for your research, please cite:
 
 We thank the authors of the following projects for their valuable contributions:
 
-- [MAGI-1](https://github.com/SandAI-org/MAGI-1) for the autoregressive video generation framework
-- [SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2) for the video diffusion model
-- [TeaCache](https://github.com/ali-vilab/TeaCache) for the inspiration on feature caching strategies
+- [MAGI-1](https://github.com/SandAI-org/MAGI-1)
+- [SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)
+- [TeaCache](https://github.com/ali-vilab/TeaCache)
+- [R-KV](https://github.com/Zefan-Cai/R-KV)
 
 ---
 
