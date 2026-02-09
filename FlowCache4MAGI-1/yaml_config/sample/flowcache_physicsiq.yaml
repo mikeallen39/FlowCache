@@ -1,0 +1,36 @@
+# FlowCache PhysicsIQ configuration file
+# Usage: bash scripts/sample/flowcache_physicsiq.sh <path_to_this_yaml>
+
+# Basic configuration
+benchmark: physicsiq
+config_file: config/sample/5s_physicsiq.json
+
+# GPU configuration
+gpus: "0,1,2,3,4"
+
+# PhysicsIQ dataset configuration
+physicsiq_data_dir: /path/to/physicsiq
+
+# Output path configuration
+base_save_path: /path/to/output/physicsiq
+
+# Reuse strategy configuration
+reuse_strategy: chunkwise
+rel_l1_thresh: 0.01
+warmup_steps: 5
+
+# KV cache compression configuration
+compress_kv_cache: true
+total_cache_chunk_nums: 6
+compress_strategy: token
+query_granularity: token
+mix_lambda: 0.07
+score_weighting_method: no_weight
+power: 3
+
+# Sampling range control
+start: 150
+end: 200
+
+# Log configuration
+log: false

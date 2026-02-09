@@ -1,0 +1,26 @@
+# TeaCache VBench configuration file
+# Usage: bash scripts/sample/teacache_vbench.sh <path_to_this_yaml>
+
+# Basic configuration
+benchmark: vbench
+config_file: config/sample/10s_vbench.json
+
+# GPU configuration
+gpus: "4,5,7"
+
+# VBench dataset configuration
+vbench_prompt_dir: /path/to/vbench/prompts
+
+# Dimension configuration (specify the current dimension to process)
+dimension: overall_consistency  # Options: subject_consistency, scene, object_class, multiple_objects, color, spatial_relationship, temporal_style, human_action, temporal_flickering, appearance_style
+
+# Output path configuration
+base_save_path: /path/to/output/vbench
+
+# Reuse strategy configuration
+reuse_strategy: all
+rel_l1_thresh: 0.01
+warmup_steps: 5
+
+# Log configuration
+log: false

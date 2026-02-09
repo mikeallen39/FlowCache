@@ -1,0 +1,15 @@
+rel_l1_thresh: 0.01
+warmup_steps: 5
+discard_nearly_clean_chunk: false
+
+compress_kv_cache: false
+total_cache_chunk_nums: 8
+compress_strategy: token
+mix_lambda: 0.07
+query_granularity: frame
+score_weighting_method: no_weight
+power: 3
+
+log: true
+print_peak_memory: true
+debug: false

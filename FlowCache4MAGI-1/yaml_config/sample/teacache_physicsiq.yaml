@@ -1,0 +1,23 @@
+# TeaCache PhysicsIQ configuration file
+# Usage: bash scripts/sample/teacache_physicsiq.sh <path_to_this_yaml>
+
+# Basic configuration
+benchmark: physicsiq
+config_file: config/sample/5s_physicsiq.json
+
+# GPU configuration
+gpus: "0,1,2,3,4,5,6,7"
+
+# PhysicsIQ dataset configuration
+physicsiq_data_dir: /path/to/physicsiq
+
+# Output path configuration
+base_save_path: /path/to/output/physicsiq
+
+# Reuse strategy configuration
+reuse_strategy: all
+rel_l1_thresh: 0.01
+warmup_steps: 5
+
+# Log configuration
+log: false
