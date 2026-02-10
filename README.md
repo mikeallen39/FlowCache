@@ -22,15 +22,22 @@ Achieving **2.38× speedup on MAGI-1** and **6.7× on SkyReels-V2** with negligi
 
 ## 📋 Table of Contents
 
+- [News](#news)
 - [Overview](#overview)
 - [Method](#method)
 - [Main Results](#main-results)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Supported Models](#supported-models)
+- [Todo](#todo)
 - [Citation](#citation)
 - [Acknowledgments](#acknowledgments)
-- [License](#license)
+
+---
+
+## 📰 News
+
+- **2026.01.26**: Paper accepted by ICLR 2026!
 
 ---
 
@@ -160,6 +167,12 @@ bash run_flowcache_fast.sh
 |:------|:-----|:------:|
 | **[MAGI-1](https://github.com/SandAI-org/MAGI-1)** | 4.5B-distill | ✅ |
 | **[SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)** | 1.3B | ✅ |
+
+---
+
+## 📝 Todo
+
+<!-- TODO items will be added here -->
 
 ---
 
