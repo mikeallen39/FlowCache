@@ -37,9 +37,9 @@ Achieving **2.38× speedup on MAGI-1** and **6.7× on SkyReels-V2** with negligi
 
 ## 📰 News
 
-- **2026.02.12**: Paper available on [arXiv](https://arxiv.org/abs/2602.10825)!
-- **2026.02.10**: Code release for [MAGI-1](https://github.com/SandAI-org/MAGI-1) and [SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)!
-- **2026.01.26**: Paper accepted by ICLR 2026!
+- 📄 **2026.02.12**: Paper available on [arXiv](https://arxiv.org/abs/2602.10825)!
+- 🚀 **2026.02.10**: Code release for [MAGI-1](https://github.com/SandAI-org/MAGI-1) and [SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)!
+- 🎉 **2026.01.26**: Paper accepted by ICLR 2026!
 
 ---
 
