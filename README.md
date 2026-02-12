@@ -8,7 +8,7 @@
 
 ### ICLR 2026
 
-**[Paper](https://openreview.net/forum?id=vko4DuhKbh)** | **[arXiv]()** |
+**[Paper](https://openreview.net/forum?id=vko4DuhKbh)** | **[arXiv](https://arxiv.org/abs/2602.10825)** |
 
 **The first caching framework specifically designed for autoregressive video generation**
 
@@ -37,6 +37,8 @@ Achieving **2.38× speedup on MAGI-1** and **6.7× on SkyReels-V2** with negligi
 
 ## 📰 News
 
+- **2026.02.12**: Paper available on [arXiv](https://arxiv.org/abs/2602.10825)!
+- **2026.02.10**: Code release for [MAGI-1](https://github.com/SandAI-org/MAGI-1) and [SkyReels-V2](https://github.com/SkyworkAI/SkyReels-V2)!
 - **2026.01.26**: Paper accepted by ICLR 2026!
 
 ---
@@ -170,9 +172,10 @@ bash run_flowcache_fast.sh
 
 ---
 
-## 📝 Todo
+## 📝 Todo List
 
-<!-- TODO items will be added here -->
+- [ ] Support more autoregressive video generation models (e.g., self-forcing, causal-forcing, etc.)
+- [ ] Integrate other training-free acceleration methods (e.g., quantization, etc.)
 
 ---
 
@@ -181,11 +184,14 @@ bash run_flowcache_fast.sh
 If you find FlowCache useful for your research, please cite:
 
 ```bibtex
-@inproceedings{flowcache2026,
-  title={Flow Caching for Autoregressive Video Generation},
-  author={Anonymous Authors},
-  booktitle={International Conference on Learning Representations (ICLR)},
-  year={2026}
+@misc{ma2026flowcachingautoregressivevideo,
+      title={Flow caching for autoregressive video generation}, 
+      author={Yuexiao Ma and Xuzhe Zheng and Jing Xu and Xiwei Xu and Feng Ling and Xiawu Zheng and Huafeng Kuang and Huixia Li and Xing Wang and Xuefeng Xiao and Fei Chao and Rongrong Ji},
+      year={2026},
+      eprint={2602.10825},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.10825}, 
 }
 ```
 
