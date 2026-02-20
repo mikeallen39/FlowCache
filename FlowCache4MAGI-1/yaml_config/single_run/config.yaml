@@ -1,9 +1,9 @@
-rel_l1_thresh: 0.01
+rel_l1_thresh: 0.015
 warmup_steps: 5
-discard_nearly_clean_chunk: false
+discard_nearly_clean_chunk: true
 
-compress_kv_cache: false
-total_cache_chunk_nums: 8
+compress_kv_cache: true
+total_cache_chunk_nums: 5
 compress_strategy: token
 mix_lambda: 0.07
 query_granularity: frame

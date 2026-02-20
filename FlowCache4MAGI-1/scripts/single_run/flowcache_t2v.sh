@@ -32,7 +32,7 @@ MAGI_ROOT=$(git rev-parse --show-toplevel)
 
 OUTPUT_NAME=flowcache
 TIMESTAMP=$(date "+%Y-%m-%d_%H-%M-%S")
-EXP_DIR="/path/to/output/magi/${TIMESTAMP}_${OUTPUT_NAME}"
+EXP_DIR="output/magi/${TIMESTAMP}_${OUTPUT_NAME}"
 mkdir -p "$EXP_DIR"
 
 LOG_FILE="$EXP_DIR/log_${TIMESTAMP}.log"
@@ -44,5 +44,5 @@ python3 inference/pipeline/flowcache.py \
     --mode t2v \
     --prompt "a cat sitting on the grass" \
     --output_path $OUTPUT_PATH \
-    --additional_config addconfig/config.yaml \
+    --additional_config yaml_config/single_run/config.yaml \
     2>&1 | tee $LOG_FILE

@@ -115,6 +115,7 @@ class KVCacheCompressor(KVCompressor):
         transport_input,
         chunk_start: int,
         chunk_denoise_count: Dict[int, int],
+        query_states_dict: Optional[Dict[int, torch.Tensor]] = None,
         **kwargs
     ) -> Dict[int, Tuple[int, int]]:
         """
@@ -152,14 +153,16 @@ class KVCacheCompressor(KVCompressor):
         for layer in model.videodit_blocks.layers:
             if not hasattr(layer.self_attention, 'kv_cluster'):
                 continue
-
+            
+            # import pdb; pdb.set_trace()
             layer_result = self._compress_layer(
                 layer=layer,
                 inference_params=inference_params,
                 tracker=tracker,
                 clean_chunk_ids=clean_chunk_ids,
                 active_chunk_ids=active_chunk_ids,
-                transport_input=transport_input
+                transport_input=transport_input,
+                query_states_dict=query_states_dict
             )
 
             # Store result from first layer for chunk metadata
@@ -185,7 +188,8 @@ class KVCacheCompressor(KVCompressor):
         tracker,
         clean_chunk_ids: List[int],
         active_chunk_ids: List[int],
-        transport_input
+        transport_input,
+        query_states_dict: Optional[Dict[int, torch.Tensor]] = None
     ) -> Dict[str, Any]:
         """
         Compress KV cache for a single layer.
@@ -197,6 +201,7 @@ class KVCacheCompressor(KVCompressor):
             clean_chunk_ids: Chunks to compress
             active_chunk_ids: Chunks to keep uncompressed
             transport_input: Transport input
+            query_states_dict: Query states for each layer (from transport)
 
         Returns:
             Dictionary with compression results
@@ -227,7 +232,7 @@ class KVCacheCompressor(KVCompressor):
             active_lengths.append(e - s)
 
         # Get query states for compression
-        query_states = self.chunk_query_states.get(layer_num)
+        query_states = query_states_dict.get(layer_num) if query_states_dict else None
         if query_states is None:
             raise RuntimeError(f"Query states not available for layer {layer_num}")
 

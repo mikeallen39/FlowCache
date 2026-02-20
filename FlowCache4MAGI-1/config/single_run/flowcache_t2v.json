@@ -46,26 +46,21 @@
             0.0,
             0.0
         ],
-        "noise2clean_kvrange": [
-            5,
-            4,
-            3,
-            2
-        ],
+        "noise2clean_kvrange": [],
         "clean_chunk_kvrange": 1,
         "clean_t": 0.9999,
         "seed": 1234,
-        "num_frames": 48,
+        "num_frames": 240,
         "video_size_h": 720,
         "video_size_w": 720,
-        "num_steps": 8,
+        "num_steps": 64,
         "window_size": 4,
         "fps": 24,
         "chunk_width": 6,
-        "load": "/path/to/your/MAGI-1/checkpoint/4.5B_distill",
-        "t5_pretrained": "/path/to/your/t5/safetensor",
+        "load": "/path/to/models/MAGI-1/ckpt/magi/4.5B_distill",
+        "t5_pretrained": "/path/to/models/MAGI-1/ckpt/t5_safetensor",
         "t5_device": "cuda",
-        "vae_pretrained": "/path/to/your/vae/checkpoint",
+        "vae_pretrained": "/path/to/models/MAGI-1/ckpt/vae",
         "scale_factor": 0.18215,
         "temporal_downsample_factor": 4
     },
@@ -80,7 +75,7 @@
         "distill_nearly_clean_chunk_threshold": 0.3,
         "shortcut_mode": "8,16,16",
         "distill": true,
-        "kv_offload": true,
+        "kv_offload": false,
         "enable_cuda_graph": false
     }
 }

@@ -511,7 +511,8 @@ def _check_and_compress_kv(self, infer_idx: int, chunk_start: int, transport_inp
             tracker=tracker,
             transport_input=transport_input,
             chunk_start=chunk_start,
-            chunk_denoise_count=self.chunk_denoise_count[infer_idx]
+            chunk_denoise_count=self.chunk_denoise_count[infer_idx],
+            query_states_dict=self.chunk_query_states
         )
 
 
