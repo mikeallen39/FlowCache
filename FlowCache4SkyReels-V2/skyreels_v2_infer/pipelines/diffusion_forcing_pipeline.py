@@ -588,10 +588,6 @@ class DiffusionForcingPipeline:
                 if hasattr(self.transformer, 'kv_cluster'):
                     self.transformer.kv_cluster.clean_chunk_idx_even = []
                     self.transformer.kv_cluster.clean_chunk_idx_odd = []
-                if args.nooptimize:
-                    self.transformer.optimize = False
-                else:
-                    self.transformer.optimize = True
                 # ------------------------------------
                 self.transformer.accumulated_rel_l1_distance_even = [0.0]*self.transformer.num_groups
                 self.transformer.accumulated_rel_l1_distance_odd = [0.0]*self.transformer.num_groups
