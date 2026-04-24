@@ -182,7 +182,7 @@ bash run_flowcache_fast.sh
 
 ## 📮 Contact
 
-For questions and collaboration inquiries, please contact the co-first authors:
+For questions and collaboration inquiries, please contact the co-first authors. The following are all **WeChat IDs**:
 
 - Yuexiao Ma: `ma18640400169`
 - Xuzhe Zheng: `zhengxuzhe_`
