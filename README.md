@@ -30,6 +30,7 @@ Achieving **2.38× speedup on MAGI-1** and **6.7× on SkyReels-V2** with negligi
 - [Quick Start](#quick-start)
 - [Supported Models](#supported-models)
 - [Todo](#todo)
+- [Contact](#contact)
 - [Citation](#citation)
 - [Acknowledgments](#acknowledgments)
 
@@ -176,6 +177,16 @@ bash run_flowcache_fast.sh
 
 - [ ] Support more autoregressive video generation models (e.g., self-forcing, causal-forcing, etc.)
 - [ ] Integrate other training-free acceleration methods (e.g., quantization, etc.)
+
+---
+
+## 📮 Contact
+
+For questions and collaboration inquiries, please contact the co-first authors:
+
+- Yuexiao Ma: `ma18640400169`
+- Xuzhe Zheng: `zhengxuzhe_`
+- Jing Xu: `a2665048215`
 
 ---
 
